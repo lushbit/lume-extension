@@ -1,0 +1,61 @@
+#lume-extension-overlay {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2147483647;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+#lume-extension-overlay .lume-ext-card {
+  width: min(360px, calc(100vw - 32px));
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: linear-gradient(160deg, #1f2937 0%, #111827 100%);
+  color: #f9fafb;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  padding: 14px;
+}
+
+#lume-extension-overlay .lume-ext-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#lume-extension-overlay .lume-ext-text {
+  font-size: 13px;
+  line-height: 1.45;
+  color: #d1d5db;
+}
+
+#lume-extension-overlay .lume-ext-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+#lume-extension-overlay .lume-ext-btn {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  color: #f9fafb;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#lume-extension-overlay .lume-ext-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+#lume-extension-overlay .lume-ext-btn-primary {
+  border-color: transparent;
+  background: #22c55e;
+  color: #06230f;
+  font-weight: 700;
+}
+
+#lume-extension-overlay .lume-ext-btn-primary:hover {
+  background: #4ade80;
+}

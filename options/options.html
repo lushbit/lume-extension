@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lume Redirect Settings</title>
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Lume Redirect</h1>
+      <p>
+        Default domain: <strong>https://lume-reader.vercel.app</strong>. Set a custom domain below to override it.
+      </p>
+
+      <label for="customBaseUrl">Custom Domain (optional)</label>
+      <input id="customBaseUrl" type="url" placeholder="https://lume.yourdomain.com" />
+
+      <label class="toggle-row" for="enabled">
+        <input id="enabled" type="checkbox" />
+        <span>Enable automatic article checks</span>
+      </label>
+
+      <button id="saveBtn" type="button">Save</button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="./options.js"></script>
+  </body>
+</html>

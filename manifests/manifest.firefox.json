@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Lume",
+  "description": "Open any article in a calm, ad-free space built for focused reading.",
+  "version": "1.0.0",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["src/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Lume",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "lume-redirect@lume.app",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
+}
+
