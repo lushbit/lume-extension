@@ -28,6 +28,7 @@ You can also configure it from the extension popup, including an optional custom
 ### Firefox (normal users)
 
 Install from the Mozilla Add-ons listing (AMO).
+Link: https://addons.mozilla.org/en-US/firefox/addon/lume/
 
 ### Chrome (advanced only)
 
